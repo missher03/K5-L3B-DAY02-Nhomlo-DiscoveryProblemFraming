@@ -125,16 +125,16 @@ Quy trình nháp hiện tại:
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Trình bày Top 3 Problem Cards cá nhân, trọng tâm là Card #1: "Báo cáo tuần của PM" (với baseline bấm giờ thực tế 85 và 95 phút trong 2 tuần, bottleneck 25 phút ở bước viết narrative). | Card #1 được đưa vào shortlist và được cả nhóm thống nhất chọn làm candidate problem chính thức để đi sâu từ CP3 đến CP6. |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: (1) Hỏi Quốc ở Card mất trộm xe máy: *"Camera sẵn có đã phát hiện người và có còi hú, nhưng nếu đặt trước cửa hàng quần áo đông người qua lại ban ngày thì Rule đứng quá N giây sẽ báo nhầm liên tục; hơn nữa một cửa hàng bao lâu mới mất xe một lần để đo metric?"* (2) Hỏi Hiệp ở Card đọc hiểu repo bài lab: *"Bạn đã bấm giờ thực tế từng bước chưa, và nếu chỉ làm một bảng checklist đối chiếu theo README thì đã giải quyết được vấn đề mà không cần tới AI chưa?"* | Giúp nhóm nhận thấy bài mất xe máy của Quốc có độ khó cao khi kiểm chứng tần suất thực tế trong buổi lab, còn bài đọc hiểu repo của Hiệp có thể giải quyết triệt để bằng No AI (checklist), từ đó hội tụ về bài toán có tần suất hàng tuần rõ ràng hơn. |
+| Nhận phản biện | Câu hỏi tôi nhận được: Quốc và Hiệp hỏi: *"Baseline 90 phút có quá chủ quan từ một người không? Nếu chỉ dùng dashboard Jira + template cố định thì đã giảm được bao nhiêu thời gian rồi, và liệu CEO/EM có thực sự đọc phần chữ narrative hay chỉ nhìn vào các con số?"* | Tôi đã sửa gì: Tôi bổ sung rõ phương án No AI cho các team chỉ xem số, đồng thời đưa giả định *"Leadership thực sự đọc phần narrative chứ không chỉ xem số"* vào Assumption Map ở CP4 để kiểm chứng bằng phỏng vấn thực tế. |
+| Gom cluster / cây OST | Cùng Hiệp và Quốc gom 9 Problem Cards của cả nhóm thành các cụm pattern chung và xây dựng cây Opportunity Solution Tree rút gọn từ 1 Outcome đo lường được. | Xác lập Outcome gốc rõ ràng và tách biệt hoàn toàn tầng Opportunity khỏi các giải pháp đội lốt. |
+| Chọn candidate problem | Thiết lập bảng chấm điểm 7 tiêu chí cho shortlist 3 bài toán đại diện của 3 thành viên và cùng nhóm thảo luận lý do chọn/loại từng bài. | Chốt chọn "Báo cáo tuần của PM" và ghi rõ lý do loại các bài khác. |
+| Kiểm chứng / research | Lập Assumption Map, thực hiện hỏi nhanh theo đúng 3 luật của The Mom Test và trực tiếp mở kiểm tra từng link công cụ (Atlassian Rovo, Aneto, n8n workflow, Slack AI). | Phát hiện cộng đồng báo cáo Rovo tính toán số liệu chưa ổn định và gói Slack Pro bị giới hạn tính năng recap từ 6/2025, giúp nhóm đổi hoàn toàn kết luận từ "tự xây công cụ AI" sang "dùng Rule lấy số + AI sẵn có soạn nháp + PM duyệt". |
+| Quy trình nhóm | Vẽ chi tiết sơ đồ quy trình Hiện tại và quy trình Tương lai kèm bảng so sánh Before/After. | Tách rõ từng bước: Bước 1 dùng Rule lấy số liệu, Bước 2–3 dùng AI tóm tắt và soạn nháp narrative, Bước 4–5 do Con người (PM) kiểm duyệt và gửi, kèm phương án quay về template cũ nếu nháp lỗi. |
+| Problem Statement | Soạn thảo Problem Statement v0 ở CP5, dùng AI phản biện tìm lỗ hổng và nâng cấp lên bản Problem Statement v1 ở CP6. | Thu hẹp Actor ở bản v1, bổ sung 2 metric chất lượng và viết 4 tiêu chí đánh giá cụ thể. |
+| Mức can thiệp AI | Đặt bài toán lên ma trận Độ mơ hồ × Độ phức tạp, lập bảng so sánh 4 mức No AI / Rule / Workflow / Agent, điền AI Canvas rút gọn và trả lời 2 câu hỏi Google PAIR. | Chứng minh rõ vì sao chọn mức Workflow thay vì Agent, và vì sao lỗi "bỏ sót rủi ro/blocker" nguy hiểm hơn "báo nhầm" để ưu tiên kiểm soát trong bộ tiêu chí eval. |
+| Quyết định | Đánh giá mức độ 4 rủi ro lớn (Value, Usability, Feasibility, Viability) theo khung Marty Cagan và thiết kế kế hoạch Pilot 2 tuần. | Thống nhất với nhóm quyết định cuối cùng |
 
 ---
 
@@ -145,28 +145,35 @@ Quy trình nháp hiện tại:
 |---|---|---|---|---|
 | CP1 Scan | Gợi ý thêm problem theo vai trò PM | Gợi ý nhanh ý #9 và #10 về báo cáo tháng | Đưa ra ý quá rộng *"trợ lý quản lý dự án toàn năng"* | Loại bỏ ý không có quy trình thật |
 | CP2 Problem Card | Đóng vai PM hoài nghi phản biện card | Chỉ ra điểm yếu về baseline chủ quan | Gợi ý dùng Agent tự động hóa toàn phần | Giữ vững boundary PM duyệt thủ công |
-| CP4 Research | Tìm kiếm công cụ và case tương tự | Gợi ý nhanh Atlassian Rovo, Slack AI, n8n | Đưa 1 link Google Help đã lỗi; nói sai về gói Slack | Tự mở từng link kiểm chứng; check lại giá gói Pro |
-| CP5 Quy trình | Chuyển đổi mô tả quy trình sang Mermaid | Vẽ sơ đồ nhanh chóng | Gộp nhầm bước "viết narrative" và "review" thành một | Tách lại vì bottleneck nằm ở viết narrative |
-| CP5–6 Problem Statement | Phản biện 6 trường Problem Statement | Chỉ ra thiếu metric chất lượng (nháp tệ thì sao) | Đề xuất thêm các chỉ số phức tạp ngoài tầm lab | Lọc lại các metric đo được thực tế (tỉ lệ viết lại) |
-| CP6 Mức can thiệp / quyết định | So sánh 4 mức can thiệp AI | Xây dựng bảng so sánh No AI / Rule / Workflow / Agent | Mặc định khuyên dùng Workflow cho mọi thứ | Giữ lập luận No AI cho team chỉ cần số |
+| CP4 Research | Tìm các dòng camera chống trộm phổ thông, tính năng AI phát hiện người và giải pháp khóa báo động hiện có trên thị trường | Gợi ý nhanh các dòng camera Imou/Ezviz có sẵn Human Detection, vùng cảnh báo | Đưa một số link sản phẩm đã ngừng kinh doanh khẳng định tính năng "AI phát hiện người" của camera giá rẻ đủ sức chống trộm trước cửa hàng | Tự mở kiểm tra từng link sống ghi rõ khoảng trống: camera có sẵn chỉ phát hiện "có người đứng trong vùng" chứ chưa phân biệt được "khách dắt xe của mình" với "kẻ gian cúi bẻ khóa" vào ban ngày |
+| CP5 Quy trình | | | | |
+| CP5–6 Problem Statement | | | | |
+| CP6 Mức can thiệp / quyết định | | | | |
 
 ---
 
 ## 6. Reflection (CP7)
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+Khi nghe Quốc trình bày các bài toán về mất trộm xe máy trước cửa hàng quần áo, nỗi lo triệu chứng sau xuất viện và nghe Hiệp chia sẻ về việc bị kẹt khi thiết lập môi trường Python/Codex cũng như đọc hiểu cấu trúc bài lab, tôi học được cách nhìn nhận sự đa dạng của "dấu hiệu thật" trong đời sống và học tập. Tôi nhận ra một vấn đề rất đau về mặt cảm xúc và tiền bạc (như mất chiếc xe 20 triệu đồng của bạn Quốc) lại có đặc thù hoàn toàn khác với một vấn đề lặp đi lặp lại hàng tuần trong công việc (như báo cáo tuần của PM). Việc đặt các bài toán cạnh nhau giúp tôi hiểu rằng khi chọn bài toán để đưa vào quy trình sản phẩm, tần suất xuất hiện đều đặn và khả năng thiết lập thực nghiệm đo lường nhanh đóng vai trò quyết định.
 
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+Có, bản thân tôi và nhóm đã vấp phải tư duy "solution-first" ở hai thời điểm. Lần thứ nhất là khi mới bắt đầu gom cụm và vẽ cây OST ở CP3, chúng tôi đã định viết các nhánh như "Xây dựng dashboard tự động nối Jira với Sheets" hay "Dùng chatbot tổng hợp Slack". Khi rà lại nguyên tắc của Teresa Torres rằng tầng Opportunity chỉ được chứa nỗi đau của người dùng, cả nhóm đã gạch bỏ ngay các dòng đó và viết lại thành nỗi đau số liệu nằm rải rác và áp lực ngồi viết nhận định từ trang trắng. Lần thứ hai là trước khi làm CP4, tôi vẫn mang tâm lý muốn "tự xây một công cụ hoặc agent viết báo cáo tuần", cho đến khi kết quả research công cụ sẵn có buộc cả nhóm phải nhìn lại bài toán một cách thực tế hơn.
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+Tôi đã đổi ý rất rõ ở hai điểm sau khi nhận phản biện từ Quốc, Hiệp và từ AI đóng vai PM hoài nghi. Ban đầu trong Problem Statement v0 và Card #1, tôi mặc định rằng mọi PM làm báo cáo tuần đều cần AI hỗ trợ viết narrative và chỉ đặt Success Metric duy nhất là giảm thời gian từ 90 phút xuống dưới 30 phút. Khi Quốc phản biện rằng *"Liệu sếp có thực sự đọc phần chữ narrative không hay chỉ nhìn bảng số, và nếu chỉ cần số thì một template kèm dashboard đã đủ chưa?"*, kết hợp với việc AI chỉ ra lỗ hổng *"báo cáo làm nhanh hơn nhưng chất lượng tệ hơn thì sao"*, tôi đã hoàn toàn đồng tình. Tôi đã thu hẹp lại Actor ở bản v1 (chỉ dành cho team mà leadership thực sự đọc narrative, còn team chỉ xem số thì dùng No AI/Rule) và bổ sung thêm metric tỉ lệ phải viết lại bản nháp dưới 50%.
 
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+Kết quả kiểm chứng và research ở CP4 làm tôi bất ngờ ở hai điểm lớn. Thứ nhất, khi phỏng vấn theo The Mom Test và khảo sát nhanh, dù đa số xác nhận bước viết nhận định (narrative) ngốn nhiều thời gian nhất, vẫn có 1/3 người được hỏi và 2/6 người trong khảo sát cho biết ở team của họ, dashboard số liệu và template cố định đã là đủ vì CEO chỉ lướt xem số. Nếu không hỏi hành vi thực tế mà chỉ hỏi câu dẫn dắt kiểu *"Bạn có muốn công cụ AI viết báo cáo không?"*, chắc chắn họ đã gật đầu khen hay và làm nhóm đi lệch hướng. Thứ hai, khi tự mở từng link research Atlassian Rovo và n8n, tôi thấy thị trường đã có sẵn công cụ giải quyết tới 80% quy trình nhưng Rovo lại bị phản ánh là tính toán số liệu chưa ổn định — điều này củng cố quyết định phải dùng Rule để lấy số chứ không giao phần số liệu cho AI.
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
+Điều khó nhất khi viết Problem Statement là giữ được sự cân bằng giữa tính cụ thể và tính mở: phải viết sao cho Bottleneck, Impact và Success Metric cực kỳ rõ ràng, có con số baseline và target đo đếm được, nhưng lại tuyệt đối không được lồng ghép giải pháp công nghệ vào trong bản mô tả vấn đề ở v0. Ngoài ra, việc chuyển hóa các giới hạn an toàn (Boundary) thành các tiêu chí đánh giá (eval) cụ thể ở bản v1 — chẳng hạn như định nghĩa thế nào là một bản nháp "đạt" về mặt số liệu, không bỏ sót blocker và không bịa nhận định — đòi hỏi phải hiểu rất sâu quy trình thật của người dùng chứ không thể viết chung chung.
 
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+Nếu được làm lại, tôi sẽ thực hiện kiểm chứng giả định số #3 (*"Leadership thực sự đọc phần narrative chứ không chỉ xem số"*) trực tiếp với người nhận báo cáo (EM hoặc CEO) và kiểm tra chính sách bảo mật dữ liệu nội bộ (giả định #5) ngay từ trước khi thiết kế luồng tương lai, thay vì để hai giả định quan trọng này sang giai đoạn chuẩn bị chạy pilot mới hỏi. Tôi cũng sẽ phản biện nhóm mạnh hơn ở việc thiết lập bộ dữ liệu mẫu (eval dataset) gồm ít nhất 5–10 báo cáo tuần cũ trong quá khứ để chấm thử chất lượng bản nháp ngay trong buổi lab, giúp quyết định Go có thêm bằng chứng thực nghiệm vững chắc hơn.
 
 **6.7. Hiểu bài:**
+Bài toán của nhóm bắt nguồn từ việc Junior PM (ở các team mà lãnh đạo đọc phần nhận định) phải tốn trung bình 90 phút mỗi sáng thứ Hai để làm báo cáo tuần, dẫn đến việc gửi trễ trong 3/8 tuần gần nhất và làm lãnh đạo thiếu thông tin trước giờ họp. Quy trình hiện tại gồm 7 bước thủ công liên tiếp (export Jira, lấy số từ Google Sheets, đọc lại Slack cả tuần, gom vào Google Docs, viết nhận định narrative, tự review định dạng và gửi email), trong đó bước nghẽn chính (bottleneck) là mất khoảng 25 phút ngồi viết phần narrative từ dữ liệu thô để nêu bật kết quả, rủi ro và việc cần làm tiếp theo. Để đo lường hiệu quả giải quyết, nhóm đặt Success Metric gồm 3 phần: giảm tổng thời gian từ 90 phút xuống dưới 30 phút, tỉ lệ PM phải viết lại bản nháp dưới 50%, và số câu hỏi làm rõ từ CEO/EM không tăng so với 4 tuần trước pilot. Nhóm vạch rõ Boundary: AI không được tự ý gửi báo cáo, không được tự sửa hay tính toán số liệu, và không được bịa ra nhận định không có căn cứ trong dữ liệu đầu vào. Khi phân tích mức can thiệp, nhóm không chọn Agent vì quy trình đã có các bước cố định và cần kiểm soát chặt quyền truy cập, mà chọn mức Workflow kết hợp Rule: dùng Rule/script tự động gom số liệu chuẩn xác vào template, dùng AI (Rovo hoặc prompt chuẩn) soạn nháp phần narrative, và bắt buộc có con người (PM) kiểm tra đối chiếu từng con số cùng các blocker trước khi gửi (kèm phương án quay về viết tay trên template cũ nếu nháp lỗi). Cuối cùng, vì cả 4 rủi ro (Value, Usability, Feasibility, Viability) đều ở mức Thấp hoặc Trung bình và có sẵn công cụ để thử ngay, nhóm ra quyết định "Go, phạm vi nhỏ" qua đợt chạy pilot 2 tuần với ngưỡng dừng định lượng: nếu 2 tuần liên tiếp PM phải viết lại trên 70% bản nháp, hoặc để lọt số liệu sai mà không phát hiện, hoặc công ty không cho phép đưa dữ liệu nội bộ vào công cụ AI thì sẽ dừng ngay và chuyển sang phương án No AI/Rule (dùng template và dashboard cố định).
 
 ---
 
