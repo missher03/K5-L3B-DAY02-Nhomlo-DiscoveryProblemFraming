@@ -13,8 +13,8 @@
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
 | 1 | Nguyễn Văn Quốc | 2A202603864 | Nhóm trưởng · Người đưa ra bài toán; viết Problem Statement; mức can thiệp và quyết định; slide thuyết trình | missher03 |
-| 2 | Nguyễn Tấn Châu | 2A202603846 | Thành viên · Kiểm chứng và research (CP4); phản biện bài toán chính | |
-| 3 | Đào Văn Hiệp | 2A202603813 | Thành viên · Vẽ quy trình trước/sau (CP5) | |
+| 2 | Nguyễn Tấn Châu | 2A202603846 | Thành viên · Kiểm chứng và research (CP4); phản biện bài toán chính | Lmeo2h |
+| 3 | Đào Văn Hiệp | 2A202603813 | Thành viên · Vẽ quy trình trước/sau (CP5) | daohiep2903 |
 
 Không ghi email hay số điện thoại vào bảng này, vì repo có thể để public.
 
