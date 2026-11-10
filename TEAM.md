@@ -81,21 +81,22 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 **Phần việc phụ trách:**
 
-- Pitch card "Tự động soạn báo cáo tuần và gửi thông báo" (CP3); phản biện bài toán chính
-- Kiểm chứng và research giải pháp đã có (CP4)
+- Pitch Problem Card cá nhân và tham gia phản biện bài toán "Mất trộm xe máy trước cửa hàng" (CP3)
+- Phụ trách kiểm chứng giả định (Assumption Map, phỏng vấn) và research giải pháp camera an ninh (CP4)
+- Phối hợp xây dựng quy trình trước/sau, rà soát Boundary, tiêu chí Eval và Problem Statement v1 (CP5–CP6)
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
-- Đặt 4 câu hỏi phản biện cho bài toán mất xe (khác gì sản phẩm hiện có, Rule có tốt hơn không, cảnh báo sai thì sao, báo nhầm có mất phí không)
-- Assumption Map, phỏng vấn kiểm chứng, bảng research giải pháp đã có và kết luận research
-
+- Đặt 4 câu hỏi phản biện sắc bén ở CP3 (khác gì camera thị trường, dùng Rule có tốt hơn AI không, xử lý báo nhầm ban ngày ra sao, rủi ro phiền hà khi tắt thông báo).
+- Xây dựng Assumption Map, thực hiện Mom Test, lập bảng Research đối chiếu các giải pháp giúp nhóm thu hẹp phạm vi.
+- Hoàn thiện sơ đồ quy trình tương lai có bước con người xác nhận, thiết lập tiêu chí Eval và chốt quyết định Go thử nghiệm 2 tuần.
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
-- `group_report.md` mục 2.1 (câu hỏi phản biện), mục 3.1–3.3; lịch sử commit của Nguyễn Tấn Châu
+- `group_report.md` mục 2.1, mục 3.1–3.3, mục 4–8; báo cáo cá nhân `report/individual/22127043_NguyenTanChau.md`.
 
 **Điều mình học được từ phần nhóm:**
 
-- Hiểu được vai trò của việc research trong đánh giá sản phẩm AI; hiểu hơn về nhu cầu AI và cách ứng dụng AI vào các bài toán cụ thể.
+- Hiểu tầm quan trọng của việc research kỹ các giải pháp sẵn có (như camera có sẵn phát hiện người và còi hú) để tránh "tự xây lại từ đầu", từ đó tập trung giải quyết đúng bài toán báo nhầm ban ngày và thiết kế chốt chặn người xác nhận trước khi báo động.
 
 
 ### DaoVanHiep-2A202603813
